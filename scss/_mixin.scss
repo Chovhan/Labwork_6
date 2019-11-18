@@ -1,0 +1,17 @@
+@mixin font-text ($colorT, $fontST, $letterSpT, $lineHT) {
+  color: $colorT;
+  font-family: Helvetica;
+  font-size: $fontST;
+  font-weight: 400;
+  line-height: $lineHT;
+  letter-spacing: $letterSpT;
+}
+
+
+@mixin flex-position ($flexD, $justifyC, $alignI, $alignC) {
+  display: flex;
+  flex-direction: $flexD;
+  justify-content: $justifyC;
+  align-items: $alignI;
+  align-content: $alignC;
+}

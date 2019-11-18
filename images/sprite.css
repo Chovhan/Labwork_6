@@ -1,0 +1,26 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+}
+.icon-light-bulb {
+  width: 180px;
+  height: 180px;
+  background-position: 0 0;
+}
+.icon-translate {
+  width: 180px;
+  height: 180px;
+  background-position: -196px 0;
+}
+.icon-add-outline {
+  width: 180px;
+  height: 180px;
+  background-position: -392px 0;
+}
+.icon-share2 {
+  width: 180px;
+  height: 180px;
+  background-position: 0 -196px;
+}
+

@@ -1,0 +1,823 @@
+@media (max-width: 1024px) and (orientation: portrait){
+  .img-area {
+    .img-area__slide-header{
+      .img-area__slide-header_title {
+        @include flex-position(column, space-between, default, default);
+        .img-area__slide-header_title-container {
+          height: 30vh;
+          width: 100%;
+          margin-top: 10px;
+          .img-area__slide-header_title-container_two {
+            width: 100%;
+            .first-element {
+              width: 70vw;
+              .firt-element_one {
+                width: 20vw;
+              }
+              .firt-element_two {
+                width: 45vw;
+              }
+            }
+            .img-area__slide-header_title-container_name {
+              width: 70vw;
+              @include font-text(black, 12vw, 0.2px, default);
+            }
+            .second-element {
+              width: 70vw;
+              .second-element_one {
+                width: 45vw;
+              }
+              .second-element_two {
+                width: 20vw;
+              }
+            }
+            .img-area__slide-header_title-container_slogan {
+              @include font-text(black, 5vw, 2px, default);
+            }
+          }
+        }
+        .img-area__slide-header_title-container-form {
+          min-height: 55vh;
+          width: 100%;
+          margin-bottom: 10px;
+          label.tab {
+            @include font-text(white, 7vw, 2px, default);
+            width: 26vw;
+          }
+          .form-container__inputs-sign {
+            width: 100%;
+            height: 55vh;
+            input[name="name"], input[name="email"], input[name="password"], input[name="code"] {
+              height: 8vh;
+              @include font-text(black, 5vw, 0.5px, default);
+            }
+            label {
+              height: 8vh;
+              @include font-text(white, 5vw, 0.5px, default);
+            }
+            input[name="registerNow"] {
+              height: 8vh;
+              @include font-text(black, 5vw, 0.5px, default);
+            }
+          }
+
+          .form-container__inputs-login {
+            height: 40vh;
+            width: 100vw;
+            input[name="email-log"], input[name="password-log"] {
+              height: 8vh;
+              @include font-text(black, 5vw, 0.5px, default);
+            }
+            input[name="login"] {
+              height: 8vh;
+              @include font-text(black, 5vw, 0.5px, default);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .img-area__slide-main {
+    .img-area__slide-main_title{
+      .main-header {
+        min-height: 26vh;
+        width: 100%;
+        margin-bottom: 10px;
+        @include flex-position(column, space-around, center, default);
+        .main-header__title {
+          min-height: 10vh;
+          @include font-text(rgb(1, 158, 167), 9vw, 1px, default);
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        .main-header__text {
+          min-height: 13vh;
+          @include font-text(rgb(1, 158, 167), 4vw, 0.5px, default);
+          text-align: center;
+        }
+      }
+      .main-about {
+        min-height: 70vh;
+        width: 100%;
+        @include flex-position(column, space-around, default, default);
+        .main-about__sections {
+          min-height: 16vh;
+          width: 90%;
+          border-bottom: 1px solid rgba(56, 55, 55, 0.88);
+          border-top: 2px solid rgba(56, 55, 55, 0.88);
+
+          @include flex-position(row, space-around, default, default);
+          .main-about__icon {
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-image: url('../images/spritemobile.png');
+          }
+          .main-about__start-icon{
+            width: 110px;
+            height: 96px;
+            background-position: -224px 0;
+          }
+          .main-about__translate-icon{
+            width: 110px;
+            height: 96px;
+            background-position: -112px 0;
+          }
+          .main-about__share-icon{
+            width: 110px;
+            height: 96px;
+            background-position: 0 -112px;
+          }
+          .main-about__create-icon{
+            width: 110px;
+            height: 96px;
+            background-position: 0 0;
+          }
+          .main-about__title {
+            height: 3vh;
+            width: 22vw;
+            transform: rotate(-90deg);
+            @include font-text(rgb(1, 158, 167), 5vw, 0.5px, default);
+          }
+          .main-about__text {
+            width: 47vw;
+            @include font-text(black, 3.3vw, 0.5px, default);
+          }
+        }
+      }
+    }
+  }
+  .img-area__slide-footer {
+    .img-area__slide-footer_title {
+      .footer-content {
+        height: 60vh;
+        @include flex-position(column, space-around, center, default);
+        .footer-content__section-one {
+          height: 12vh;
+          width: 74vw;
+          .footer-content__section-one__first-element {
+            .footer-content__firt-element_one {
+              width: 50vw;
+            }
+            .footer-content__firt-element_two {
+              width: 20vw;
+            }
+          }
+          .footer-content__section-one_text {
+            width: 74vw;
+            @include font-text(white, 15vw, 0.2px, default);
+          }
+          .footer-content__section-one__second-element {
+            .footer-content__second-element_one {
+              width: 50vw;
+            }
+            .footer-content__second-element_two {
+              width: 20vw;
+            }
+          }
+        }
+        .footer-content__section-two {
+          height: 20vh;
+          width: 90vw;
+          .footer-content__section-two-header {
+            height: 7vh;
+            .footer-content__section-two-header-element_one {
+              height: 1vh;
+              width: 15vw;
+            }
+            .footer-content__section-two-header-text {
+              width: 60vw;
+              height: 10vh;
+              @include font-text(white, 7vw, 0.2px, default);
+            }
+            .footer-content__section-two-header-element_two {
+              height: 1vh;
+              width: 15vw;
+            }
+          }
+          .footer-content__section-two-text {
+            width: 90vw;
+            height: 7vh;
+            @include font-text(white, 6vw, 0.2px, default);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+    .img-area {
+      .img-area__slide-header {
+        .img-area__slide-header_title {
+          .img-area__slide-header_title-container {
+            .img-area__slide-header_title-container_two {
+              min-height: 30vh;
+              .first-element {
+                width: 47vw;
+                .firt-element_one {
+                  width: 10vw;
+                }
+                .firt-element_two {
+                  width: 32vw;
+                }
+              }
+              .img-area__slide-header_title-container_name {
+                min-width: 47vw;
+                @include font-text(black, 8vw, 0.2px, default)
+              }
+              .second-element {
+                width: 47vw;
+                .second-element_one {
+                  width: 32vw;
+                }
+                .second-element_two {
+                  width: 10vw;
+                }
+              }
+              .img-area__slide-header_title-container_slogan {
+                min-height: 20vh;
+                width: 47vw;
+              @include font-text(black, 4vw, 2px, default);
+              }
+            }
+          }
+        }
+        .img-area__slide-header_title-container-form {
+          label.tab {
+            width: 16vw;
+            @include font-text(white, 4vw, 2px, default);
+            font-weight: 600;
+          }
+          .form-container__inputs-sign {
+            min-height: 70vh;
+            width: 45vw;
+            input[name="name"], input[name="email"], input[name="password"], input[name="code"]{
+              height: 7vh;
+              @include font-text(black, 4vw, 0.5px, default);
+            }
+            label {
+              height: 8vh;
+              @include font-text(white, 2.5vw, 0.5px, default);
+            }
+            input[name="registerNow"] {
+              height: 7vh;
+              @include font-text(black, 2.5vw, 0.5px, default);
+            }
+          }
+          .form-container__inputs-login {
+            height: 40vh;
+            width: 45vw;
+            input[name="email-log"], input[name="password-log"] {
+              height: 7vh;
+              @include font-text(black, 4vw, 0.5px, default);
+            }
+            input[name="login"] {
+              height: 7vh;
+              @include font-text(black, 2.5vw, 0.5px, default);
+            }
+          }
+        }
+      }
+    }
+
+    .img-area__slide-main {
+      .img-area__slide-main_title {
+        .main-header {
+          width: 80%;
+          height: 26vh;
+          margin-bottom: 10px;
+          .main-header__title {
+            height: 12vh;
+            width: 100%;
+            @include font-text(rgb(1, 158, 167), 5vw, 1px, default)
+            font-weight: 700;
+            margin-bottom: 10px;
+          }
+          .main-header__text {
+            width: 100%;
+            height: 12vh;
+            text-align: center;
+            @include font-text(rgb(1, 158, 167), 3vw, 1px, default)
+          }
+        }
+        .main-about {
+          height: 70vh;
+          width: 90%;
+          @include flex-position(row, space-between, default, default);
+          .main-about__sections {
+            width: 22vw;
+            .main-about__icon {
+              display: inline-block;
+              background-repeat: no-repeat;
+              background-image: url('../images/spriteipad.png');
+            }
+            .main-about__start-icon {
+              height: 200px;
+              width: 180px;
+              background-position: -392px 0;;
+            }
+            .main-about__translate-icon {
+              height: 200px;
+              width: 180px;
+              background-position: -192px 0
+            }
+            .main-about__share-icon {
+              height: 200px;
+              width: 180px;
+              background-position: 0 -192px;
+            }
+            .main-about__create-icon {
+              height: 200px;
+              width: 180px;
+              background-position: 0 10px;
+            }
+            .main-about__title {
+              height: 5vh;
+              @include font-text(rgb(1, 158, 167), 4vw, 1.8px, default)
+              font-weight: 700;
+            }
+            .main-about__text {
+              margin-top: 20px;
+              min-height: 35vh;
+              @include font-text(black, 2.5vw, 1.8px, default)
+            }
+          }
+        }
+      }
+    }
+
+    .img-area__slide-footer {
+      .img-area__slide-footer_title {
+        .footer-content {
+          height: 40vh;
+          .footer-content__section-one {
+            height: 20vh;
+            width: 30vw;
+            .footer-content__section-one__first-element {
+              .footer-content__firt-element_one {
+                width: 5vw;
+              }
+              .footer-content__firt-element_two {
+                width: 20vw;
+              }
+            }
+            .footer-content__section-one_text {
+              width: 30vw;
+              @include font-text(white, 6vw, 0.2px, default);
+              font-weight: 700;
+            }
+            .footer-content__section-one__second-element {
+              .footer-content__second-element_one {
+                width: 20vw;
+              }
+              .footer-content__second-element_two {
+                width: 5vw;
+              }
+            }
+          }
+          .footer-content__section-two {
+            height: 13vw;
+            width: 40vw;
+            @include flex-position(column, space-between, center, default);
+            .footer-content__section-two-header {
+              height: 7vh;
+              .footer-content__section-two-header-element_one {
+                width: 5vw;
+                height: 5px;
+              }
+              .footer-content__section-two-header-text {
+                height: 7vh;
+                width: 28vw;
+                @include font-text(white, 3.5vw, 0.2px, default);
+                font-weight: 700;
+              }
+              .footer-content__section-two-header-element_two {
+                width: 5vw;
+                height: 5px;
+              }
+            }
+            .footer-content__section-two-text {
+              height: 7vh;
+              width: 26vw;
+              @include font-text(white, 3.5vw, 0.2px, default);
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+}
+
+
+@media (max-width: 720px) and (orientation: portrait){
+
+  .img-area {
+    .img-area__slide-header{
+      .img-area__slide-header_title {
+        @include flex-position(column, space-between, default, default);
+        .img-area__slide-header_title-container {
+          height: 30vh;
+          width: 100%;
+          margin-top: 10px;
+          .img-area__slide-header_title-container_two {
+            width: 100%;
+            .first-element {
+              width: 70vw;
+              .firt-element_one {
+                width: 20vw;
+              }
+              .firt-element_two {
+                width: 45vw;
+              }
+            }
+            .img-area__slide-header_title-container_name {
+              width: 70vw;
+              @include font-text(black, 12vw, 0.2px, default);
+            }
+            .second-element {
+              width: 70vw;
+              .second-element_one {
+                width: 45vw;
+              }
+              .second-element_two {
+                width: 20vw;
+              }
+            }
+            .img-area__slide-header_title-container_slogan {
+              @include font-text(black, 5vw, 2px, default);
+            }
+          }
+        }
+        .img-area__slide-header_title-container-form {
+          min-height: 55vh;
+          width: 100%;
+          margin-bottom: 10px;
+          label.tab {
+            @include font-text(white, 7vw, 2px, default);
+            width: 26vw;
+          }
+          .form-container__inputs-sign {
+            width: 100%;
+            height: 55vh;
+            input[name="name"], input[name="email"], input[name="password"], input[name="code"] {
+              height: 8vh;
+              @include font-text(black, 5vw, 0.5px, default);
+            }
+            label {
+              height: 8vh;
+              @include font-text(white, 5vw, 0.5px, default);
+            }
+            input[name="registerNow"] {
+              height: 8vh;
+              @include font-text(black, 5vw, 0.5px, default);
+            }
+          }
+
+          .form-container__inputs-login {
+            height: 40vh;
+            width: 100vw;
+            input[name="email-log"], input[name="password-log"] {
+              height: 8vh;
+              @include font-text(black, 5vw, 0.5px, default);
+            }
+            input[name="login"] {
+              height: 8vh;
+              @include font-text(black, 5vw, 0.5px, default);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .img-area__slide-main {
+    .img-area__slide-main_title{
+      .main-header {
+        min-height: 26vh;
+        width: 100%;
+        margin-bottom: 10px;
+        @include flex-position(column, space-around, center, default);
+        .main-header__title {
+          min-height: 13vh;
+          @include font-text(rgb(1, 158, 167), 10vw, 1px, default);
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        .main-header__text {
+          min-height: 13vh;
+          @include font-text(rgb(1, 158, 167), 5vw, 0.5px, default);
+          text-align: center;
+        }
+      }
+      .main-about {
+        min-height: 70vh;
+        width: 100%;
+        @include flex-position(column, space-around, default, default);
+        .main-about__sections {
+          min-height: 16vh;
+          width: 90%;
+          border-bottom: 1px solid rgba(56, 55, 55, 0.88);
+          border-top: 2px solid rgba(56, 55, 55, 0.88);
+
+          @include flex-position(row, space-around, default, default);
+          .main-about__icon {
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-image: url('../images/spritemobile.png');
+          }
+          .main-about__start-icon{
+            width: 110px;
+            height: 96px;
+            background-position: -224px 0;
+          }
+          .main-about__translate-icon{
+            width: 110px;
+            height: 96px;
+            background-position: -112px 0;
+          }
+          .main-about__share-icon{
+            width: 110px;
+            height: 96px;
+            background-position: 0 -112px;
+          }
+          .main-about__create-icon{
+            width: 110px;
+            height: 96px;
+            background-position: 0 0;
+          }
+          .main-about__title {
+            height: 3vh;
+            width: 22vw;
+            transform: rotate(-90deg);
+            @include font-text(rgb(1, 158, 167), 5vw, 0.5px, default);
+          }
+          .main-about__text {
+            width: 47vw;
+          }
+        }
+      }
+    }
+  }
+  .img-area__slide-footer {
+    .img-area__slide-footer_title {
+      .footer-content {
+        height: 60vh;
+        @include flex-position(column, space-around, center, default);
+        .footer-content__section-one {
+          height: 12vh;
+          width: 74vw;
+          .footer-content__section-one__first-element {
+            .footer-content__firt-element_one {
+              width: 50vw;
+            }
+            .footer-content__firt-element_two {
+              width: 20vw;
+            }
+          }
+          .footer-content__section-one_text {
+            width: 74vw;
+            @include font-text(white, 15vw, 0.2px, default);
+          }
+          .footer-content__section-one__second-element {
+            .footer-content__second-element_one {
+              width: 50vw;
+            }
+            .footer-content__second-element_two {
+              width: 20vw;
+            }
+          }
+        }
+        .footer-content__section-two {
+          height: 20vh;
+          width: 90vw;
+          .footer-content__section-two-header {
+            height: 7vh;
+            .footer-content__section-two-header-element_one {
+              height: 1vh;
+              width: 15vw;
+            }
+            .footer-content__section-two-header-text {
+              width: 60vw;
+              height: 10vh;
+              @include font-text(white, 7vw, 0.2px, default);
+            }
+            .footer-content__section-two-header-element_two {
+              height: 1vh;
+              width: 15vw;
+            }
+          }
+          .footer-content__section-two-text {
+            width: 90vw;
+            height: 7vh;
+            @include font-text(white, 6vw, 0.2px, default);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 820px) and (orientation: landscape) {
+
+  .img-area {
+    .img-area__slide-header {
+      .img-area__slide-header_title {
+        .img-area__slide-header_title-container {
+          .img-area__slide-header_title-container_two {
+            min-height: 30vh;
+            .first-element {
+              width: 47vw;
+              .firt-element_one {
+                width: 10vw;
+              }
+              .firt-element_two {
+                width: 32vw;
+              }
+            }
+            .img-area__slide-header_title-container_name {
+              min-width: 47vw;
+              @include font-text(black, 8vw, 0.2px, default)
+            }
+            .second-element {
+              width: 47vw;
+              .second-element_one {
+                width: 32vw;
+              }
+              .second-element_two {
+                width: 10vw;
+              }
+            }
+            .img-area__slide-header_title-container_slogan {
+              min-height: 20vh;
+              width: 47vw;
+            @include font-text(black, 4vw, 2px, default);
+            }
+          }
+        }
+      }
+      .img-area__slide-header_title-container-form {
+        label.tab {
+          width: 16vw;
+          @include font-text(white, 4vw, 2px, default);
+          font-weight: 600;
+        }
+        .form-container__inputs-sign {
+          min-height: 70vh;
+          width: 45vw;
+          input[name="name"], input[name="email"], input[name="password"], input[name="code"]{
+            height: 7vh;
+            @include font-text(black, 4vw, 0.5px, default);
+          }
+          label {
+            height: 8vh;
+            @include font-text(white, 2.5vw, 0.5px, default);
+          }
+          input[name="registerNow"] {
+            height: 7vh;
+            @include font-text(black, 2.5vw, 0.5px, default);
+          }
+        }
+        .form-container__inputs-login {
+          height: 40vh;
+          width: 45vw;
+          input[name="email-log"], input[name="password-log"] {
+            height: 7vh;
+            @include font-text(black, 4vw, 0.5px, default);
+          }
+          input[name="login"] {
+            height: 7vh;
+            @include font-text(black, 2.5vw, 0.5px, default);
+          }
+        }
+      }
+    }
+  }
+
+  .img-area__slide-main {
+    .img-area__slide-main_title {
+      .main-header {
+        width: 80%;
+        height: 26vh;
+        margin-bottom: 10px;
+        .main-header__title {
+          height: 12vh;
+          width: 100%;
+          @include font-text(rgb(1, 158, 167), 6vw, 1px, default)
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        .main-header__text {
+          width: 100%;
+          height: 12vh;
+          text-align: center;
+          @include font-text(rgb(1, 158, 167), 2.5vw, 1px, default)
+        }
+      }
+      .main-about {
+        min-height: 70vh;
+        width: 90%;
+        @include flex-position(row, space-between, default, default);
+        .main-about__sections {
+          width: 22vw;
+          .main-about__icon {
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-image: url('../images/spritemobile.png');
+          }
+          .main-about__start-icon{
+            width: 110px;
+            height: 110px;
+            background-position: -224px 0;
+          }
+          .main-about__translate-icon{
+            width: 110px;
+            height: 110px;
+            background-position: -112px 0;
+          }
+          .main-about__share-icon{
+            width: 110px;
+            height: 110px;
+            background-position: 0 -112px;
+          }
+          .main-about__create-icon{
+            width: 110px;
+            height: 110px;
+            background-position: 0 0;
+          }
+
+          .main-about__title {
+            height: 5vh;
+            @include font-text(rgb(1, 158, 167), 3vw, 1.8px, default)
+            font-weight: 700;
+          }
+          .main-about__text {
+            margin-top: 20px;
+            min-height: 30vh;
+          }
+        }
+      }
+    }
+  }
+
+  .img-area__slide-footer {
+    .img-area__slide-footer_title {
+      .footer-content {
+        height: 40vh;
+        .footer-content__section-one {
+          height: 20vh;
+          width: 30vw;
+          .footer-content__section-one__first-element {
+            .footer-content__firt-element_one {
+              width: 5vw;
+            }
+            .footer-content__firt-element_two {
+              width: 20vw;
+            }
+          }
+          .footer-content__section-one_text {
+            width: 30vw;
+            @include font-text(white, 6vw, 0.2px, default);
+            font-weight: 700;
+          }
+          .footer-content__section-one__second-element {
+            .footer-content__second-element_one {
+              width: 20vw;
+            }
+            .footer-content__second-element_two {
+              width: 5vw;
+            }
+          }
+        }
+        .footer-content__section-two {
+          height: 13vw;
+          width: 40vw;
+          @include flex-position(column, space-between, center, default);
+          .footer-content__section-two-header {
+            height: 7vh;
+            .footer-content__section-two-header-element_one {
+              width: 5vw;
+              height: 5px;
+            }
+            .footer-content__section-two-header-text {
+              height: 7vh;
+              width: 28vw;
+              @include font-text(white, 3.5vw, 0.2px, default);
+              font-weight: 700;
+            }
+            .footer-content__section-two-header-element_two {
+              width: 5vw;
+              height: 5px;
+            }
+          }
+          .footer-content__section-two-text {
+            height: 7vh;
+            width: 26vw;
+            @include font-text(white, 3.5vw, 0.2px, default);
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
